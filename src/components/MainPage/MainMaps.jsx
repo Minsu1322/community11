@@ -6,6 +6,7 @@ import { StyledLogoDiv } from '../Navbar/StyledNavbar';
 import MainMapTitle from './MainMapTitle';
 import { useDispatch, useSelector } from 'react-redux';
 import { setUserLat, setUserLng } from '../../redux/mapApiSlice';
+import towntalk_banner from '../../logoImages/towntalk_banner.png';
 
 const StyledMainMapsContainer = styled.div`
   display: flex;
@@ -126,7 +127,7 @@ function MainMaps() {
 
   return (
     <>
-      <StyledLogoDiv src="src/logoImages/towntalk_banner.png"></StyledLogoDiv>
+      <StyledLogoDiv src={towntalk_banner}></StyledLogoDiv>
       <MainMapTitle />
 
       <StyledMainMapsContainer>

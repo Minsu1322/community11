@@ -65,7 +65,6 @@ export const StyledButton = styled.button`
 `;
 
 export const StyledLogoDiv = styled.img`
-  background-repeat: no-repeat;
-  height: 450px;
-  background-size: cover;
+  background-repeat: repeat;
+  height: 420px;
 `;
