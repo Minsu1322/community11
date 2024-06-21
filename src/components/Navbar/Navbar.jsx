@@ -5,6 +5,7 @@ import { useQuery } from '@tanstack/react-query';
 import { getPosts } from '../../../supabase/post.api';
 import { useDispatch, useSelector } from 'react-redux';
 import { setKeyword, uploadPostsData } from '../../redux/slice/postsSlice';
+import towntalk_logo from '../../logoImages/towntalk_logo.png';
 
 export const Navbar = () => {
   const navigate = useNavigate();
@@ -29,7 +30,7 @@ export const Navbar = () => {
   return (
     <>
       <StyledNavBarDiv>
-        <StyledTitle src="src/logoImages/towntalk_logo.png" />
+        <StyledTitle src={towntalk_logo} />
         <StyledInputDiv onSubmit={handleSubmitKeyword}>
           <label htmlFor="searchTitle"></label>
           <img src="src/logoImages/search.png" />

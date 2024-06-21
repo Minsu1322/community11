@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { StyledSearchContainer, StyledSearchIcon, StyledSearchLocation, StyledSearchTitle } from './StyledMapTitle';
 import { setUserLat, setUserLng } from '../../redux/mapApiSlice';
 import { setUserPlace } from '../../redux/mainTitleSlice';
+import freeiconlocation3865991 from '../../logoImages/free-icon-location-3865991.png';
 
 function MainMapTitle() {
   const dispatch = useDispatch();
@@ -66,7 +67,7 @@ function MainMapTitle() {
   return (
     <StyledSearchContainer>
       <StyledSearchLocation>
-        <StyledSearchIcon src="src/logoImages/free-icon-location-3865991.png" alt="위치아이콘" />
+        <StyledSearchIcon src={freeiconlocation3865991} alt="위치아이콘" />
         <StyledSearchTitle>"{getFormattedPlace(my_place)}"의 소모임이 궁금하다면?</StyledSearchTitle>
       </StyledSearchLocation>
     </StyledSearchContainer>
