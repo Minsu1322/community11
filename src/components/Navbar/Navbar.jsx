@@ -29,10 +29,10 @@ export const Navbar = () => {
   return (
     <>
       <StyledNavBarDiv>
-        <StyledTitle src="src\logoImages\towntalk_logo.png" />
+        <StyledTitle src="src/logoImages/towntalk_logo.png" />
         <StyledInputDiv onSubmit={handleSubmitKeyword}>
           <label htmlFor="searchTitle"></label>
-          <img src="src\logoImages\search.png" />
+          <img src="src/logoImages/search.png" />
           <input
             type="text"
             id="searchTitle"
